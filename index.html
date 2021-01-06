@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">        
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Jogo da Memória</title>
+</head>
+<body>
+    <nav>        
+        <h1 class="titulo">Jogo da Memória</h1>
+    </nav>
+    <main>        
+        <div class="fila1">
+            <img class="cartas" onclick="virarCarta(event)" id="carta01" src="img/GrowdevLogo.jpg" data-valor="img/imagem01.jpg">
+            <img class="cartas" onclick="virarCarta(event)" id="carta02" src="img/GrowdevLogo.jpg" data-valor="img/imagem02.jpg">
+            <img class="cartas" onclick="virarCarta(event)" id="carta03" src="img/GrowdevLogo.jpg" data-valor="img/imagem03.jpg">
+            <img class="cartas" onclick="virarCarta(event)" id="carta04" src="img/GrowdevLogo.jpg" data-valor="img/imagem04.jpg">
+            <img class="cartas" onclick="virarCarta(event)" id="carta05" src="img/GrowdevLogo.jpg" data-valor="img/imagem05.jpg">
+        </div>
+        <div class="fila2">
+            <img class="cartas" onclick="virarCarta(event)" id="carta06" src="img/GrowdevLogo.jpg" data-valor="img/imagem06.jpg">
+            <img class="cartas" onclick="virarCarta(event)" id="carta07" src="img/GrowdevLogo.jpg" data-valor="img/imagem07.jpg">
+            <img class="cartas" onclick="virarCarta(event)" id="carta08" src="img/GrowdevLogo.jpg" data-valor="img/imagem08.jpg">
+            <img class="cartas" onclick="virarCarta(event)" id="carta09" src="img/GrowdevLogo.jpg" data-valor="img/imagem09.jpg">
+            <img class="cartas" onclick="virarCarta(event)" id="carta10" src="img/GrowdevLogo.jpg" data-valor="img/imagem10.jpg">
+        </div>
+        <div class="fila3">
+            <img class="cartas" onclick="virarCarta(event)" id="carta11" src="img/GrowdevLogo.jpg" data-valor="img/imagem01.jpg">
+            <img class="cartas" onclick="virarCarta(event)" id="carta12" src="img/GrowdevLogo.jpg" data-valor="img/imagem02.jpg">
+            <img class="cartas" onclick="virarCarta(event)" id="carta13" src="img/GrowdevLogo.jpg" data-valor="img/imagem03.jpg">
+            <img class="cartas" onclick="virarCarta(event)" id="carta14" src="img/GrowdevLogo.jpg" data-valor="img/imagem04.jpg">
+            <img class="cartas" onclick="virarCarta(event)" id="carta15" src="img/GrowdevLogo.jpg" data-valor="img/imagem05.jpg">
+        </div>
+        <div class="fila4">
+            <img class="cartas" onclick="virarCarta(event)" id="carta16" src="img/GrowdevLogo.jpg" data-valor="img/imagem06.jpg">
+            <img class="cartas" onclick="virarCarta(event)" id="carta17" src="img/GrowdevLogo.jpg" data-valor="img/imagem07.jpg">
+            <img class="cartas" onclick="virarCarta(event)" id="carta18" src="img/GrowdevLogo.jpg" data-valor="img/imagem08.jpg">
+            <img class="cartas" onclick="virarCarta(event)" id="carta19" src="img/GrowdevLogo.jpg" data-valor="img/imagem09.jpg">
+            <img class="cartas" onclick="virarCarta(event)" id="carta20" src="img/GrowdevLogo.jpg" data-valor="img/imagem10.jpg">
+        </div>
+    </main>
+    <aside class="placar">
+        <input id='score' class='score' value="score: 00" readonly />
+        <button id='botao' class='botao' onclick="redistribuir()">Embaralhar</button>
+    </aside>
+   
+    <script src="js/scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+.cartas {
+    width: 100px;
+}
+
+main {
+    margin-top: 10px;
+    perspective: 800px;
+}
+
+body {    
+    background: radial-gradient(circle, rgb(0, 0, 0) 24%, #CCE);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav {
+    position: absolute;
+    float: left;
+    top: 0px;
+    left: 0px;
+    margin-top: 10px;
+    margin-left: 5%;
+}
+
+.titulo {    
+    font-family: 'Press Start 2P', cursive;
+    font-size: 50px;
+    width: 150px;
+}
+
+.placar {    
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    width: 25%;
+    margin-top: 10px;
+}
+
+.score {
+    background: black;
+    color: rgb(50, 182, 50);
+    font-family: 'Press Start 2P', cursive;
+    font-size: 20px;
+    margin: 5px;
+    padding: 6px;
+    border-radius: 5px;   
+    width: 200px;
+}
+
+.botao {
+    align-self: center;
+    width: 100px;
+}
+
+.flip{
+    transform: rotateY(180deg) scaleX(-1);   
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
